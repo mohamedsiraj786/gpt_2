@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=900&t=st=1707586592~exp=1707587192~hmac=08e694d2a4fb79371496f8cc34e530ee01f7b2fce49d20f816e8a7c85d30a20b');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chat-container {
+    max-width: 1200px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Added to make space for the fixed input container */
+}
+
+#input-container {
+  border-radius: 15px;
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width:92.5vw;
+    background-color: #fff;
+    z-index: 1; /* Ensure it's above the response container */
+}
+
+#user-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+#send-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#send-button:hover {
+    background-color: #e912c5;
+    transition: background-color 0.7s linear;
+
+}
+#voice-icon {
+    background-color: #e91212;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#voice-icon:hover {
+    background-color: #1281e9;
+    transition: background-color 0.7s linear;
+}
+
+#response-container {
+    max-height: calc(100% - 60px); /* Adjust as needed */
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.bot-message {
+    text-align: left;
+}
+
+.message-content {
+    background-color: #000000;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    border-radius: 15px;
+}
